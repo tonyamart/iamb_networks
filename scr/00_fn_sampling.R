@@ -24,7 +24,7 @@ corpus_index = x %>%
   distinct(id, .keep_all = T)
 
 if (sample_size == "corpus median") {
-  sample_length = median(corpus_index$length) %>% round(digits = -1)
+  sample_length = median(corpus_index$length) %>% round()
 }
 else (sample_length = sample_size)
 
